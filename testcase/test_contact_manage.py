@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from service.test_wechat_requests_V1.api.contact_manage import ContactManage
-from service.test_wechat_requests_V1.utils.util import Util
+from wechat_requests.api.contact_manage import ContactManage
+from wechat_requests.utils.util import Util
 
 
 class TestContactManage:

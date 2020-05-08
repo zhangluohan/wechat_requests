@@ -1,0 +1,23 @@
+sudo: false
+language: python
+python:
+  - 3.5
+  - 3.6
+matrix:
+  include: # Required for python 3.7+
+    - python: 3.7
+      dist: xenial
+    - python: 3.8
+      dist: xenial
+install:
+script:
+  #- coverage run -m unittest discover
+  #- coverage report
+  - python test_contact_manage.py
+  #- python -m unittest discover
+  #- python -m httprunner.cli hrun -V
+  #- python -m httprunner.cli hrun -h
+  #- poetry build
+  #- poetry run coverage run --source=httpruner -m unittest discover
+after_success:
+  #- poetry run coveralls

@@ -1,8 +1,8 @@
 import requests
 
-from wechat_requests.api.base_api import BaseApi
-from wechat_requests.api.work import Work
-from wechat_requests.utils.util import Util
+from api.base_api import BaseApi
+from api.work import Work
+from utils.util import Util
 
 
 class ContactManage(BaseApi):

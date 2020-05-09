@@ -10,7 +10,8 @@ matrix:
     - python: 3.8
       dist: xenial
 install:
-  - pip install  -vvv
+  - pip install coverage
+  - pip install coveralls
 script:
   - coverage run -m test_requests.py discover
   - coverage report

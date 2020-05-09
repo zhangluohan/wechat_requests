@@ -2,4 +2,4 @@
 wechat-api
 
 # status image
-https://travis-ci.com/zhangluohan/wechat_requests.svg?branch=master
+[![Build Status](https://travis-ci.com/zhangluohan/wechat_requests.svg?branch=master)](https://travis-ci.com/zhangluohan/wechat_requests)

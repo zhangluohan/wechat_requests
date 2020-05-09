@@ -13,13 +13,13 @@ install:
   - pip install poetry
   - poetry install -vvv
 script:
-  - coverage run -m test_requests.py discover
-  - coverage report
-  #- python test_login.py
+  #- coverage run -m test_requests.py discover
+  #- coverage report
+  - python test_requests.py
   #- python -m unittest discover
   #- python -m httprunner.cli hrun -V
   #- python -m httprunner.cli hrun -h
   #- poetry build
   #- poetry run coverage run --source=httpruner -m unittest discover
 #after_success:
-  - poetry run coveralls
+  #- poetry run coveralls

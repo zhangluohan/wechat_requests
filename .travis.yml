@@ -10,10 +10,9 @@ matrix:
     - python: 3.8
       dist: xenial
 install:
-  - pip install poetry
-  - poetry install -vvv
+  - pip install  -vvv
 script:
-  - coverage run -m test_requests discover
+  - coverage run -m test_requests.py discover
   - coverage report
   #- python test_login.py
   #- python -m unittest discover
@@ -21,5 +20,5 @@ script:
   #- python -m httprunner.cli hrun -h
   #- poetry build
   #- poetry run coverage run --source=httpruner -m unittest discover
-after_success:
-  - poetry run coveralls
+#after_success:
+ # - poetry run coveralls

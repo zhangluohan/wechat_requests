@@ -1,6 +1,6 @@
 import requests
 
-from test_wechat_requests.utils.util import Util
+from utils.util import Util
 
 
 class BaseApi:
